@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>homework</title>
+	<style>
+		div.h{
+			text-align: center;
+			font-size: 20px;
+			width: 200px;
+			height: 30px;
+			/*top:10px;
+			left:10px;*/
+			position: relative;
+			/*float: left;*/
+			line-height: 30px;
+			border:10px double transparent;
+		}
+		div.h:hover {
+			border:10px double pink;
+			border-radius: 10px;
+			top:0px;
+			left:0px;
+			position: relative;
+			text-align: center;
+		}
+		div.tooltip{
+			width: 150px;
+			height: 50px;
+			/*float: right;
+			margin-right: 800px;*/
+			line-height: 30px;
+			font-size: 30px;
+			font-family: '隶书';
+			margin-left: 50px;
+		}
+		.tooltip {
+		    position: relative;
+		    display: inline-block;
+		}
+		.tooltip .tooltiptext {
+		    visibility: hidden;
+		    width: 300px;
+		    background-color:skyblue;
+		    color: #fff;
+		    text-align: center;
+		    padding: 5px 0;
+		    border-radius: 6px;
+		    position: absolute;
+		    z-index: 1;
+		    top: -5px;
+    		left: 105%; 
+			/*font-size: 20px;*/
+			
+		}
+		.tooltip:hover .tooltiptext {
+		    visibility: visible;
+		    font-size: 20px;
+		}
+	</style>
+	</head>
+	<body>
+		<div>
+		<div class="h">
+			Hello world
+		</div>
+	<div class="tooltip">这里有惊喜
+	  <span class="tooltiptext">World is beautiful~</span>
+	  </div>
+  </div>
+</body>
+</html>
